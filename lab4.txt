@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4 - Основи CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Особиста сторінка студента</h1>
+    </header>
+    
+    <div class="container">
+        <section class="personal-info">
+            <h2>Особиста інформація</h2>
+            <div class="info-card">
+                <div class="photo-container">
+                    <img src="student-photo.jpg" alt="Фото студента" class="student-photo">
+                </div>
+                <div class="details">
+                    <p><strong>ПІБ:</strong> Іванов Іван Іванович</p>
+                    <p><strong>Група:</strong> ІПЗ-21-1</p>
+                    <p><strong>Спеціальність:</strong> Інженерія програмного забезпечення</p>
+                    <p><strong>Університет:</strong> ДУІТТ</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-me">
+            <h2>Про мене</h2>
+            <div class="text-content">
+                <p>Я студент 2 курсу спеціальності "Інженерія програмного забезпечення". Цікавлюсь веб-розробкою, штучним інтелектом та кібербезпекою.</p>
+                <p>У вільний час займаюсь спортом, вивчаю нові технології та читаю наукову фантастику.</p>
+                <p>Моя мета - стати професійним розробником програмного забезпечення та брати участь у цікавих IT-проектах.</p>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2>Мої навички</h2>
+            <div class="skills-list">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Git</div>
+            </div>
+        </section>
+        
+        <section class="control-questions">
+            <h2>Відповіді на контрольні запитання</h2>
+            <div class="questions">
+                <div class="question">
+                    <h3>1. Що таке CSS і яка його роль у веб-розробці?</h3>
+                    <p>CSS (Cascading Style Sheets) - це мова стилів, яка використовується для опису зовнішнього вигляду документів, написаних мовами розмітки, такими як HTML. CSS відповідає за візуальне представлення веб-сторінок, включаючи кольори, шрифти, розташування елементів тощо.</p>
+                </div>
+                
+                <div class="question">
+                    <h3>2. Які основні властивості в CSS і як вони задаються?</h3>
+                    <p>Основні властивості CSS включають:
+                    <ul>
+                        <li>Властивості тексту (color, font-size, font-family)</li>
+                        <li>Властивості фону (background-color, background-image)</li>
+                        <li>Властивості розмірів (width, height)</li>
+                        <li>Властивості позиціонування (margin, padding, border)</li>
+                    </ul>
+                    Властивості задаються у форматі: властивість: значення;</p>
+                </div>
+                
+                <div class="question">
+                    <h3>3. Що таке селектори в CSS? Наведіть приклади різних типів селекторів.</h3>
+                    <p>Селектори - це шаблони, які використовуються для вибору елементів HTML, до яких будуть застосовані стилі. Приклади селекторів:
+                    <ul>
+                        <li>Селектори елементів: p, h1, div</li>
+                        <li>Класові селектори: .container, .header</li>
+                        <li>Ідентифікаторні селектори: #main, #footer</li>
+                        <li>Універсальний селектор: *</li>
+                        <li>Селектори атрибутів: [type="text"]</li>
+                    </ul></p>
+                </div>
+                
+                <div class="question">
+                    <h3>4. Яка різниця між класовим та ідентифікаторним селекторами?</h3>
+                    <p>Класовий селектор (починається з крапки .) може застосовуватись до багатьох елементів на сторінці, тоді як ідентифікаторний селектор (починається з решітки #) повинен бути унікальним і застосовуватись лише до одного елемента на сторінці.</p>
+                </div>
+                
+                <div class="question">
+                    <h3>5. Як записати коментарі в CSS?</h3>
+                    <p>Коментарі в CSS записуються між символами /* і */. Наприклад: /* Це коментар в CSS */</p>
+                </div>
+                
+                <div class="question">
+                    <h3>6. Як змінити фоновий колір, колір тексту та розмір шрифту для елементу?</h3>
+                    <p>Для зміни цих властивостей використовуються:
+                    <ul>
+                        <li>background-color: значення; - для фону</li>
+                        <li>color: значення; - для кольору тексту</li>
+                        <li>font-size: значення; - для розміру шрифту</li>
+                    </ul>
+                    Наприклад: p { background-color: #f0f0f0; color: #333; font-size: 16px; }</p>
+                </div>
+                
+                <div class="question">
+                    <h3>7. Як задати межі (borders), відступи (margins) та внутрішні відступи (padding) для елементів в CSS?</h3>
+                    <p>Ці властивості задаються наступним чином:
+                    <ul>
+                        <li>border: ширина стиль колір; - наприклад: border: 1px solid #000;</li>
+                        <li>margin: значення; - зовнішні відступи</li>
+                        <li>padding: значення; - внутрішні відступи</li>
+                    </ul>
+                    Можна також задавати окремі сторони: margin-top, padding-left, border-bottom тощо.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Лабораторна робота №4: Основи CSS</p>
+        <p>Виконав: Іванов І.І., група ІПЗ-21-1</p>
+    </footer>
+</body>
+</html>
